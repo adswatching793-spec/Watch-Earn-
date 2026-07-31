@@ -20,24 +20,19 @@ font-family:Arial,sans-serif;
 body{
 background:#0b0f19;
 color:white;
-min-height:100vh;
 }
-
 
 .header{
 background:#111827;
 padding:25px;
 text-align:center;
-border-bottom:1px solid #334155;
 }
-
 
 .container{
 width:90%;
-max-width:500px;
+max-width:450px;
 margin:30px auto;
 }
-
 
 .card{
 background:#111827;
@@ -47,58 +42,58 @@ border:1px solid #334155;
 text-align:center;
 }
 
-
-.video-box{
-
+.video{
 height:220px;
 background:#1e293b;
 border-radius:15px;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:60px;
+font-size:65px;
 margin:20px 0;
-
 }
 
-
-button{
-
-width:100%;
-padding:15px;
-border:none;
-border-radius:12px;
-background:#2563eb;
-color:white;
-font-size:17px;
-
+.timer{
+font-size:35px;
+color:#22c55e;
+margin:15px;
 }
-
 
 .progress{
-
-margin-top:20px;
 height:12px;
 background:#334155;
 border-radius:20px;
-
 }
 
-
 .progress span{
-
 display:block;
-width:30%;
 height:100%;
-background:#22c55e;
+width:70%;
+background:#2563eb;
 border-radius:20px;
+}
 
+button{
+width:100%;
+padding:15px;
+margin-top:20px;
+border:none;
+border-radius:12px;
+background:#16a34a;
+color:white;
+font-size:17px;
+}
+
+.badge{
+display:none;
+margin-top:15px;
+color:#22c55e;
+font-weight:bold;
 }
 
 </style>
 
 </head>
-
 
 <body>
 
@@ -112,7 +107,6 @@ border-radius:20px;
 </div>
 
 
-
 <div class="container">
 
 
@@ -122,31 +116,71 @@ border-radius:20px;
 <h2>Video Task 01</h2>
 
 
-<div class="video-box">
+<div class="video">
 ▶
 </div>
 
 
-<p>Watch task progress</p>
+<div class="timer" id="time">
+30
+</div>
 
+
+<p>Watch Progress</p>
+
+<br>
 
 <div class="progress">
 <span></span>
 </div>
 
 
-<br>
-
-
-<button>
+<button onclick="completeTask()">
 Complete Task
 </button>
 
 
+<div class="badge" id="done">
+✓ Task Completed
 </div>
 
 
 </div>
+
+</div>
+
+
+
+<script>
+
+let time=30;
+
+let counter=setInterval(function(){
+
+time--;
+
+document.getElementById("time").innerHTML=time;
+
+
+if(time<=0){
+
+clearInterval(counter);
+
+document.getElementById("time").innerHTML="Ready";
+
+}
+
+},1000);
+
+
+
+function completeTask(){
+
+document.getElementById("done").style.display="block";
+
+}
+
+</script>
 
 
 </body>
