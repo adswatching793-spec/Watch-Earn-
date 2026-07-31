@@ -1,91 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nexa Watch</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial;
+font-family:Arial, sans-serif;
 }
 
 body{
-background:#f3f4f6;
+background:#0b0f19;
+color:white;
 }
 
-.header{
-background:#111827;
-color:white;
+header{
 padding:25px;
 text-align:center;
+background:#111827;
+border-bottom:1px solid #273244;
 }
 
-.header h1{
-font-size:32px;
+header h1{
+font-size:35px;
 }
+
+header p{
+color:#9ca3af;
+margin-top:8px;
+}
+
 
 .hero{
 text-align:center;
-padding:50px 20px;
+padding:70px 20px;
 }
 
 .hero h2{
-font-size:30px;
+font-size:38px;
 margin-bottom:15px;
 }
 
 .hero p{
-color:#555;
-margin-bottom:25px;
+color:#cbd5e1;
+font-size:18px;
+margin-bottom:35px;
 }
 
-button{
-padding:14px 30px;
-border:none;
-border-radius:8px;
-background:#2563eb;
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+margin:10px;
+border-radius:10px;
+text-decoration:none;
 color:white;
-font-size:16px;
-margin:8px;
-cursor:pointer;
+background:#2563eb;
+font-size:17px;
 }
 
-.card{
-background:white;
+
+.btn.register{
+background:#16a34a;
+}
+
+
+.section{
 width:90%;
-max-width:500px;
+max-width:700px;
 margin:20px auto;
+background:#111827;
+padding:30px;
+border-radius:20px;
+border:1px solid #273244;
+}
+
+
+.section h3{
+margin-bottom:20px;
+font-size:24px;
+}
+
+
+.section p{
+padding:10px;
+color:#cbd5e1;
+}
+
+
+footer{
+text-align:center;
 padding:25px;
-border-radius:15px;
-box-shadow:0 5px 20px #ddd;
-}
-
-.card h3{
-margin-bottom:15px;
-}
-
-.card p{
-padding:8px;
-}
-
-.login-box{
-display:none;
-background:white;
-width:90%;
-max-width:350px;
-margin:20px auto;
-padding:25px;
-border-radius:15px;
-}
-
-input{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:1px solid #ddd;
-border-radius:8px;
+color:#94a3b8;
 }
 
 </style>
@@ -94,10 +106,14 @@ border-radius:8px;
 
 <body>
 
-<div class="header">
+
+<header>
+
 <h1>Nexa Watch</h1>
-<p>Professional Demo Platform</p>
-</div>
+<p>Smart Video Task Platform</p>
+
+</header>
+
 
 
 <div class="hero">
@@ -105,56 +121,55 @@ border-radius:8px;
 <h2>Welcome To Nexa Watch</h2>
 
 <p>
-Track tasks, manage your profile and explore the dashboard.
+Manage your account, complete tasks and track your progress easily.
 </p>
 
-<a href="login.html">
-<button>Login</button>
+
+<a class="btn" href="login.html">
+Login
 </a>
 
-<a href="register.html">
-<button>Register Now</button>
+
+<a class="btn register" href="register.html">
+Register Now
 </a>
+
 
 </div>
 
 
-<div class="card">
 
-<h3>Dashboard Preview</h3>
+<div class="section">
 
+<h3>Our Features</h3>
 
-
-<div class="login-box" id="box">
-
-<h2 id="title">Register Now</h2>
-
-<input type="text" placeholder="Full Name">
-
-<input type="number" placeholder="WhatsApp Number">
-
-<input type="password" placeholder="Password">
-
-<input type="password" placeholder="Repeat Password">
-
-<button>Register</button>
+<p>✓ Professional User Dashboard</p>
+<p>✓ Task Management System</p>
+<p>✓ Progress Tracking</p>
+<p>✓ Secure Account Access</p>
 
 </div>
 
-<script>
-
-function showLogin(){
-document.getElementById("box").style.display="block";
-document.getElementById("title").innerHTML="Login";
-}
 
 
-function showRegister(){
-document.getElementById("box").style.display="block";
-document.getElementById("title").innerHTML="Register Now";
-}
+<div class="section">
 
-</script>
+<h3>How It Works</h3>
+
+<p>1. Create your account</p>
+<p>2. Access your dashboard</p>
+<p>3. Complete available tasks</p>
+<p>4. Track your activity</p>
+
+</div>
+
+
+
+<footer>
+
+© 2026 Nexa Watch
+
+</footer>
 
 
 </body>
