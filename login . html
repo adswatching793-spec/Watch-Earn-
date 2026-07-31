@@ -8,15 +8,17 @@
 <body>
 
 <div class="box">
-<h2>Login</h2>
 
-<input type="text" placeholder="Username">
+<h2>Login Account</h2>
+
+<input type="number" placeholder="WhatsApp Number">
 
 <input type="password" placeholder="Password">
 
 <button>Login</button>
 
 <p>Don't have account?</p>
+
 <a href="register.html">Register Now</a>
 
 </div>
