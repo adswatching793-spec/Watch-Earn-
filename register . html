@@ -9,15 +9,17 @@
 
 <div class="box">
 
-<h2>Create Account</h2>
+<h2>Create New Account</h2>
 
 <input type="text" placeholder="Full Name">
 
-<input type="email" placeholder="Email">
+<input type="number" placeholder="WhatsApp Number">
 
 <input type="password" placeholder="Password">
 
-<button>Register</button>
+<input type="password" placeholder="Repeat Password">
+
+<button>Register Now</button>
 
 <p>Already have account?</p>
 
