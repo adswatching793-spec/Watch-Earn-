@@ -20,35 +20,49 @@ font-family:Arial,sans-serif;
 body{
 background:#0b0f19;
 color:white;
+padding-bottom:80px;
 }
 
 .header{
 background:#111827;
-padding:25px;
-text-align:center;
+padding:20px;
+display:flex;
+align-items:center;
+gap:15px;
 border-bottom:1px solid #334155;
 }
 
-.header h1{
-font-size:32px;
+.profile{
+width:55px;
+height:55px;
+border-radius:50%;
+background:#2563eb;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:25px;
+}
+
+.header h2{
+font-size:22px;
 }
 
 .container{
 width:90%;
 max-width:700px;
-margin:25px auto;
+margin:20px auto;
 }
 
 .card{
 background:#111827;
-padding:25px;
-border-radius:20px;
-margin-bottom:20px;
+padding:20px;
+border-radius:18px;
 border:1px solid #334155;
+margin-bottom:20px;
 }
 
 .balance{
-font-size:38px;
+font-size:35px;
 color:#22c55e;
 margin-top:10px;
 }
@@ -66,43 +80,45 @@ border-radius:12px;
 text-align:center;
 }
 
-.task{
+
+.ad{
 background:#1e293b;
-padding:18px;
+padding:15px;
 border-radius:15px;
 margin-top:15px;
 }
 
+
+.video{
+height:150px;
+background:#020617;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:45px;
+margin:10px 0;
+}
+
+
 button{
 width:100%;
 padding:13px;
-margin-top:12px;
 border:none;
 border-radius:10px;
 background:#2563eb;
 color:white;
 font-size:16px;
+margin-top:10px;
 }
+
 
 .withdraw{
 background:#16a34a;
 }
 
-.menu{
-margin-top:20px;
-display:flex;
-justify-content:center;
-gap:10px;
-}
 
-.menu a{
-background:#1e293b;
-padding:10px 15px;
-border-radius:10px;
-color:white;
-text-decoration:none;
-font-size:14px;
- .bottom-nav{
+.bottom{
 position:fixed;
 bottom:0;
 left:0;
@@ -114,53 +130,31 @@ justify-content:space-around;
 border-top:1px solid #334155;
 }
 
-.bottom-nav a{
+.bottom a{
 color:white;
 text-decoration:none;
 font-size:14px;
-text-align:center;
-} }</style>
+}
+
+
+</style>
 
 </head>
 
 
-<div class="bottom-nav">
-
-<a href="dashboard.html">
-🏠<br>
-Home
-</a>
-
-<a href="profile.html">
-👤<br>
-Profile
-</a>
-
-<a href="support.html">
-💬<br>
-Support
-</a>
-
-</div><body>
+<body>
 
 
 <div class="header">
 
-<h1>Nexa Watch</h1>
-
-<p>Ads Watching Dashboard</p>
-
-
-<div class="menu">
-
-<a href="dashboard.html">Dashboard</a>
-
-<a href="profile.html">Profile</a>
-
-<a href="support.html">Support</a>
-
+<div class="profile">
+👤
 </div>
 
+<div>
+<h2>Member Name</h2>
+<p>Active Account</p>
+</div>
 
 </div>
 
@@ -171,13 +165,11 @@ Support
 
 <div class="card">
 
-<h2>Welcome User 👋</h2>
+<h2>Account Balance</h2>
 
-<p>Account Overview</p>
-
-<h1 class="balance">
-1000 PKR
-</h1>
+<div class="balance">
+0 PKR
+</div>
 
 </div>
 
@@ -185,20 +177,20 @@ Support
 
 <div class="card">
 
-<h2>Task Statistics</h2>
+<h2>Task Summary</h2>
 
 <br>
 
 <div class="stats">
 
 <div class="stat">
-<h3>10</h3>
-<p>Total Tasks</p>
+<h2>10</h2>
+<p>Total Ads</p>
 </div>
 
 
 <div class="stat">
-<h3>6</h3>
+<h2>0</h2>
 <p>Completed</p>
 </div>
 
@@ -213,43 +205,164 @@ Support
 <h2>Available Ads</h2>
 
 
-<div class="task">
 
-📺 Advertisement Task 01
+<div class="ad">
 
-<a href="task.html">
+<h3>Advertisement 1</h3>
+
+<div class="video">
+▶
+</div>
+
 <button>
 Start Watching
 </button>
-</a>
 
 </div>
 
 
-<div class="task">
 
-📺 Advertisement Task 02
+<div class="ad">
 
-<a href="task.html">
+<h3>Advertisement 2</h3>
+
+<div class="video">
+▶
+</div>
+
 <button>
 Start Watching
 </button>
-</a>
 
 </div>
 
 
-<div class="task">
 
-📺 Advertisement Task 03
+<div class="ad">
 
-<a href="task.html">
+<h3>Advertisement 3</h3>
+
+<div class="video">
+▶
+</div>
+
 <button>
 Start Watching
 </button>
-</a>
 
 </div>
+
+
+
+<div class="ad">
+
+<h3>Advertisement 4</h3>
+
+<div class="video">
+▶
+</div>
+
+<button>
+Start Watching
+</button>
+
+</div>
+
+
+
+<div class="ad">
+
+<h3>Advertisement 5</h3>
+
+<div class="video">
+▶
+</div>
+
+<button>
+Start Watching
+</button>
+
+</div>
+
+
+<div class="ad">
+
+<h3>Advertisement 6</h3>
+
+<div class="video">
+▶
+</div>
+
+<button>
+Start Watching
+</button>
+
+</div>
+
+
+
+<div class="ad">
+
+<h3>Advertisement 7</h3>
+
+<div class="video">
+▶
+</div>
+
+<button>
+Start Watching
+</button>
+
+</div>
+
+
+
+<div class="ad">
+
+<h3>Advertisement 8</h3>
+
+<div class="video">
+▶
+</div>
+
+<button>
+Start Watching
+</button>
+
+</div>
+
+
+
+<div class="ad">
+
+<h3>Advertisement 9</h3>
+
+<div class="video">
+▶
+</div>
+
+<button>
+Start Watching
+</button>
+
+</div>
+
+
+
+<div class="ad">
+
+<h3>Advertisement 10</h3>
+
+<div class="video">
+▶
+</div>
+
+<button>
+Start Watching
+</button>
+
+</div>
+
 
 
 </div>
@@ -260,15 +373,37 @@ Start Watching
 
 <h2>Withdraw</h2>
 
-<p>Manage your withdrawal request</p>
+<p>Request your withdrawal through admin support</p>
+
+<a href="support.html">
 
 <button class="withdraw">
-Withdraw Request
+Withdraw Now
 </button>
+
+</a>
 
 </div>
 
 
+
+</div>
+
+
+
+<div class="bottom">
+
+<a href="dashboard.html">
+🏠<br>Home
+</a>
+
+<a href="profile.html">
+👤<br>Profile
+</a>
+
+<a href="support.html">
+💬<br>Support
+</a>
 
 </div>
 
