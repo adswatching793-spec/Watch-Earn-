@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nexa Watch Register</title>
+<title>Nexa Watch Dashboard</title>
 
 <style>
 
@@ -13,92 +14,128 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
-height:100vh;
-background:#0b0f19;
-display:flex;
-align-items:center;
-justify-content:center;
+
+background:
+linear-gradient(rgba(3,7,18,.9),rgba(3,7,18,.95)),
+url("https://images.unsplash.com/photo-1611162617474-5b21e879e113");
+
+background-size:cover;
+background-position:center;
 color:white;
+
 }
 
 
-.register-card{
+.header{
+
+background:rgba(17,24,39,.95);
+padding:25px;
+text-align:center;
+border-bottom:1px solid #334155;
+
+}
+
+
+.header h1{
+
+font-size:32px;
+
+}
+
+
+.container{
 
 width:90%;
-max-width:400px;
-background:#111827;
-padding:35px;
+max-width:700px;
+margin:25px auto;
+
+}
+
+
+.card{
+
+background:rgba(17,24,39,.95);
+padding:25px;
 border-radius:20px;
-border:1px solid #273244;
+margin-bottom:20px;
+border:1px solid #334155;
 box-shadow:0 10px 30px #000;
 
 }
 
 
-.logo{
+.balance{
 
-text-align:center;
-font-size:35px;
-margin-bottom:10px;
-
-}
-
-
-h2{
-
-text-align:center;
-margin-bottom:25px;
-font-size:30px;
+font-size:38px;
+color:#22c55e;
+margin-top:15px;
 
 }
 
 
-input{
+.task{
+
+background:#1e293b;
+padding:18px;
+border-radius:15px;
+margin-top:15px;
+
+}
+
+
+.task button{
 
 width:100%;
-padding:15px;
-margin:10px 0;
-background:#1f2937;
+padding:12px;
+margin-top:12px;
 border:none;
 border-radius:10px;
+background:#2563eb;
 color:white;
 font-size:16px;
 
 }
 
 
-button{
+.progress{
 
-width:100%;
-padding:15px;
-margin-top:15px;
-border:none;
-border-radius:10px;
-background:#16a34a;
-color:white;
-font-size:17px;
-cursor:pointer;
+height:12px;
+background:#334155;
+border-radius:20px;
+overflow:hidden;
 
 }
 
 
-p{
+.progress span{
 
-text-align:center;
+display:block;
+height:100%;
+width:60%;
+background:#22c55e;
+
+}
+
+
+.menu{
+
+display:flex;
+justify-content:space-around;
 margin-top:20px;
-color:#9ca3af;
 
 }
 
 
-a{
+.menu div{
 
-color:#3b82f6;
-text-decoration:none;
+background:#1e293b;
+padding:12px;
+border-radius:10px;
+font-size:14px;
 
 }
 
@@ -111,47 +148,122 @@ text-decoration:none;
 <body>
 
 
-<div class="register-card">
+<div class="header">
 
+<h1>Nexa Watch</h1>
 
-<div class="logo">
-Nexa Watch
+<p>Ads Watching Dashboard</p>
+
 </div>
 
 
-<h2>Create Account</h2>
+
+<div class="container">
 
 
-<input type="text" placeholder="Full Name">
+
+<div class="card">
+
+<h2>Welcome 👋</h2>
+
+<p>User Account</p>
+
+<h1 class="balance">
+1000 PKR
+</h1>
+
+</div>
 
 
-<input type="number" placeholder="WhatsApp Number">
+
+<div class="card">
+
+<h2>Task Progress</h2>
+
+<br>
+
+<div class="progress">
+
+<span></span>
+
+</div>
+
+<p style="margin-top:12px;">
+6 Tasks Completed / 10
+</p>
+
+</div>
 
 
-<input type="password" placeholder="Password">
+
+<div class="card">
+
+<h2>Available Ads Tasks</h2>
 
 
-<input type="password" placeholder="Repeat Password">
+<div class="task">
 
-
+📺 Advertisement Task 01
 
 <button>
-Register Now
+Start Watching
 </button>
 
+</div>
 
 
-<p>
-Already have an account?
-<a href="login.html">
-Login
-</a>
-</p>
+
+<div class="task">
+
+📺 Advertisement Task 02
+
+<button>
+Start Watching
+</button>
+
+</div>
+
+
+
+<div class="task">
+
+📺 Advertisement Task 03
+
+<button>
+Start Watching
+</button>
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Account Menu</h2>
+
+
+<div class="menu">
+
+<div>Profile</div>
+
+<div>History</div>
+
+<div>Support</div>
+
+</div>
+
+
+</div>
+
 
 
 </div>
 
 
 </body>
-  <!-- dashboard update -->
+
 </html>
